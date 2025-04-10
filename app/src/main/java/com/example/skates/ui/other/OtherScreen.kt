@@ -19,7 +19,6 @@ fun OtherScreen(
     modifier: Modifier,
     otherViewModel: OtherScreenViewModel = viewModel()
 ) {
-
     val uiState by otherViewModel.otherScreenUIState.collectAsState()
 
     Scaffold(
