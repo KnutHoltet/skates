@@ -60,6 +60,12 @@ dependencies {
     implementation(libs.androidx.material)
     implementation(libs.ui.tooling.preview)
 
+    // Lifecycle (viewModel)
     implementation(libs.androidx.lifecycle.viewmodel.compose)
     implementation(libs.androidx.lifecycle.runtime.ktx.vlifecycleversion)
+
+    // Navigation
+    val nav_version = "2.7.7"
+    implementation(libs.androidx.navigation.compose)
+
 }
