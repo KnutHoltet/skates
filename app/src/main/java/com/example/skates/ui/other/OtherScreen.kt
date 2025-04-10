@@ -1,12 +1,9 @@
-package com.example.skates.ui.home
+package com.example.skates.ui.other
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Button
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -18,11 +15,11 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 
 
 @Composable
-fun HomeScreen(
+fun OtherScreen(
     modifier: Modifier,
-    homeViewModel: HomeScreenViewModel = viewModel()
+    otherViewModel: OtherScreenViewModel = viewModel()
 ) {
-    val uiState by homeViewModel.homeScreenUIState.collectAsState()
+    val uiState by otherViewModel.otherScreenUIState.collectAsState()
 
     Scaffold(
         modifier = modifier
